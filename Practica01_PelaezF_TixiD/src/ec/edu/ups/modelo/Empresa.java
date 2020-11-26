@@ -13,6 +13,20 @@ public class Empresa {
 	private List<Producto> producto = new ArrayList<>();
 	private List<Persona> persona = new ArrayList<>();
 	
+	
+	public Empresa() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Empresa(int empresaId, String empresaNombre,String empresaRuc,String empresaDireccion,String empresaTelefono,String empresaEmail) {
+		this.empresaId=empresaId;
+		this.empresaNombre=empresaNombre;
+		this.empresaRuc=empresaRuc;
+		this.empresaDireccion=empresaDireccion;
+		this.empresaTelefono=empresaTelefono;
+		this.empresaEmail=empresaEmail;
+	}
+	
 	public int getEmpresaId() {
 		return empresaId;
 	}
@@ -60,6 +74,12 @@ public class Empresa {
 	}
 	public void setPersona(List<Persona> persona) {
 		this.persona = persona;
+	}
+	@Override
+	public String toString() {
+		return "Empresa [empresaId=" + empresaId + ", empresaNombre=" + empresaNombre + ", empresaRuc=" + empresaRuc
+				+ ", empresaDireccion=" + empresaDireccion + ", empresaTelefono=" + empresaTelefono + ", empresaEmail="
+				+ empresaEmail + ", producto=" + producto + ", persona=" + persona + "]";
 	}
 	
 	

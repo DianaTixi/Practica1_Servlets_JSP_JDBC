@@ -12,6 +12,22 @@ public class Persona {
 	private String personaContrasena;
 	private Empresa empresa;
 	
+	
+	public Persona() {
+		
+	}
+	public Persona(String personaCedula, String personaNombre, String personaApellido, String personaRol, String personaTelfono, String personaDireccion, String personaEmail, String personaContrasena, Empresa empresa) {
+		this.personaId= personaId;
+		this.personaCedula= personaCedula;
+		this.personaNombre= personaNombre;
+		this.personaApellido= personaApellido;
+		this.personaRol= personaRol;
+		this.personaTelfono= personaTelfono;
+		this.personaDireccion= personaDireccion;
+		this.personaEmail= personaEmail;
+		this.personaContrasena= personaContrasena;
+		this.empresa= empresa;
+	}
 	public int getPersonaId() {
 		return personaId;
 	}
@@ -71,6 +87,13 @@ public class Persona {
 	}
 	public void setEmpresa(Empresa empresa) {
 		this.empresa = empresa;
+	}
+	@Override
+	public String toString() {
+		return "Persona [personaId=" + personaId + ", personaCedula=" + personaCedula + ", personaNombre="
+				+ personaNombre + ", personaApellido=" + personaApellido + ", personaRol=" + personaRol
+				+ ", personaTelfono=" + personaTelfono + ", personaDireccion=" + personaDireccion + ", personaEmail="
+				+ personaEmail + ", personaContrasena=" + personaContrasena + ", empresa=" + empresa + "]";
 	}
 	
 	
