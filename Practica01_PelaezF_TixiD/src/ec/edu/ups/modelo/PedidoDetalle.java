@@ -1,6 +1,10 @@
 package ec.edu.ups.modelo;
 
-public class PedidoDetalle {
+import java.io.Serializable;
+
+public class PedidoDetalle implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private int pedidoDetalleId;
     private int pedidoDetalleCantidad;
     private double pedidoDetallePrecioUnitario;

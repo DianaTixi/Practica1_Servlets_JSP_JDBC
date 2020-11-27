@@ -1,6 +1,10 @@
 package ec.edu.ups.modelo;
 
-public class Producto {
+import java.io.Serializable;
+
+public class Producto implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private int productoId;
     private String productoNombre;
     private String productoDescripcion; 
@@ -8,6 +12,18 @@ public class Producto {
     private double productoPrecioVenta;
     private Categoria categoria;
     
+    public Producto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+    public Producto(int productoId, String productoNommbre, String productoDescripcion, int productoStock, double productoPrecioVenta) {
+		this.productoId=productoId;
+		this.productoNombre=productoNommbre;
+		this.productoDescripcion=productoDescripcion;
+		this.productoStock= productoStock;
+		this.productoPrecioVenta=productoPrecioVenta;	
+	}
+	
 	public int getProductoId() {
 		return productoId;
 	}

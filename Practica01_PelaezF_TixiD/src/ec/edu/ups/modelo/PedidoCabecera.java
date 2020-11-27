@@ -1,9 +1,12 @@
 package ec.edu.ups.modelo;
 
 import java.util.Date;
+import java.io.Serializable;
 import java.util.*;
 
-public class PedidoCabecera {
+public class PedidoCabecera implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private int pedidoCabeceraNumero;
     private Date pedidoCabeceraFecha;
     private double pedidoCabeceraSubtotal;

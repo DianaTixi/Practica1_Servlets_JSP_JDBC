@@ -1,6 +1,10 @@
 package ec.edu.ups.modelo;
 
-public class Persona {
+import java.io.Serializable;
+
+public class Persona implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private int personaId;
 	private String personaCedula;
 	private String personaNombre;
